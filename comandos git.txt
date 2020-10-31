@@ -1,0 +1,17 @@
+
+pwd: muestra la capeta raiz
+cd: permite la navegacion entre carpetas cd.(directorio actual)cd..(regresa directorio anterior)
+mkdir: crea una carpeta (mkdir proyecto1)
+rm: elimina archivos ojo con este comando
+touch: permite crear archivos de diferentes extenciones (vacio.txt)
+cat: permite mostrar el contenido de un archivo
+ls: muestra los archivos o lista de carpetas dentro de un directorio
+ls-al: muestra los archivos y capetas dentro de un directorio incluso las ocultas
+ls-l: muestra solo las carpetas pero no las ocultas.
+history: muestra historial de comandos
+!+numero: ejecuta el numero de la linea de comando
+clear:limpia la consola.
+
+para obtener ayuda sobre un comando solo se debe digitar ej: clear --help o cat --help
+
+git init: se crea un archivo en memoria ram para el archivo que se llama staging y tambien una capeta de repositorio donde se van a alojar todos los cambios de un archivo
