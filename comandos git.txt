@@ -11,7 +11,47 @@ ls-l: muestra solo las carpetas pero no las ocultas.
 history: muestra historial de comandos
 !+numero: ejecuta el numero de la linea de comando
 clear:limpia la consola.
+git status: estado de archivos
+
+
+
 
 para obtener ayuda sobre un comando solo se debe digitar ej: clear --help o cat --help
 
 git init: se crea un archivo en memoria ram para el archivo que se llama staging y tambien una capeta de repositorio donde se van a alojar todos los cambios de un archivo
+git add: permite pasar de un achivo untracked a tracked es decir un archivo normal lo pasa a staging donde ya se comienza a observar el archivo
+git commit -m: el archivo se va al repositorio
+
+master:ciclo de archivos iniciales de inicio a fin/head
+development/experimentos:experimentos que se quieren realizar con alguna version del master 
+hotfix or bugfix:se utiliza para corregir heads or versiones finales o unir versiones parciales con head
+
+git config: para configurar nombre e email y otras funciones de usuario
+
+git log: muestra historial de cambios al archivo
+
+git checkout+codigo: devuelve archivo a version anterior
+
+git master: version final oficial
+
+git diff version a version b: muestra la diferencia entre versiones
+
+git reset version soft: resetea a un estado anterior pero se guarda en stage
+
+git reset version hard: resetea a un estado anterior y no se guarda.
+
+git log --stat: explica las lineas que se cambiaron brevemente
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Repositorio remoto
+
+Se utiliza para cuando se esta trabajando en grupo asi que todo se ha guardado en un servidor 
+
+git clone url: trae una copia del servidor al directorio donde estas trabajando y guarda un repositorio del mismo archivo
+git push: envia ultimo cambio del archivo al servidor  
+git fetch: trae una version de archivo que se haya cambiado en el servidor y la guarda en el repositorio local
+git merge: para llevar los archivos traidos del git fetch al directorio de trabajo.
+git pull: trae los archivos cambiados por compañeros y los guarda en el directorio local y repositorrio local
+
+/e/abel-documentos/bturabo/platzi/github/proyecto1 
