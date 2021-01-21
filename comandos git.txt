@@ -26,7 +26,7 @@ master:ciclo de archivos iniciales de inicio a fin/head
 development/experimentos:experimentos que se quieren realizar con alguna version del master 
 hotfix or bugfix:se utiliza para corregir heads or versiones finales o unir versiones parciales con head
 
-git config: para configurar nombre e email y otras funciones de usuario
+git config -l: para configurar nombre e email y otras funciones de usuario
 
 git log: muestra historial de cambios al archivo
 
@@ -55,3 +55,24 @@ git merge: para llevar los archivos traidos del git fetch al directorio de traba
 git pull: trae los archivos cambiados por compañeros y los guarda en el directorio local y repositorrio local
 
 /e/abel-documentos/bturabo/platzi/github/proyecto1 
+Q: para salir de la cadena de git log
+ESC+Shift+ZZ: para salir de la consola de comandos cuando no se hace un buen commit o merge
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+GITHUB
+
+Se crea una cuenta en github y le damos crear nuevo repositorio
+Siempre se debe crear el archivo readme.md
+
+git remote add origin + direccion https: Se digita en la consola para agregar un directorio remoto a nuestros archivos
+Git remote: muestra si tenemos un acceso remoto con la parabra origin
+git remote -v: nos muestra el origin de forma verbal lo cual es la direccion https://
+git push origin master: Envia la rama master al servidor de github (generalmente abre consola de login para github)
+git pull origin master --allow-unrelated-histories: se utiliza en dado caso que no se puedan fusionar las versiones del servidor y la real de git
+
+El comado para crear una llave privada y publica es el siguiente:
+ssh-keygen -t rsa -b 4096
+ssh-keygen -t rsa -b 4096 -C "enrique89_02@hotmail.com"
+La frace es "Abel Casas" ojo
+
+
