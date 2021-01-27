@@ -69,10 +69,30 @@ Git remote: muestra si tenemos un acceso remoto con la parabra origin
 git remote -v: nos muestra el origin de forma verbal lo cual es la direccion https://
 git push origin master: Envia la rama master al servidor de github (generalmente abre consola de login para github)
 git pull origin master --allow-unrelated-histories: se utiliza en dado caso que no se puedan fusionar las versiones del servidor y la real de git
-
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Creacion de llave publica y privada
 El comado para crear una llave privada y publica es el siguiente:
 ssh-keygen -t rsa -b 4096
 ssh-keygen -t rsa -b 4096 -C "enrique89_02@hotmail.com"
-La frace es "Abel Casas" ojo
+La frace es "AbelCasas" ojo
+se debe poner a correr el process id con el siguiente comando eval $(ssh-agent -s) nos va a dar un numero asi (agent pid 2074)
+---------------------------------------------------------------------------------------------------------------------------------------------
+* CREACION DE TAG EN FLUJO DE TRABAJO
+
+git log --all --graph --decorate --oneline: muestra el flujo de trabajos organizado con todos los commmit y las branches
+alias arbolito="git log --all --graph --decorate --oneline"= genera una variable llamada arbolito que ejecuta el comando entre comillas
+Gitk: muestra el mismo grafico pero en consola
+git tag: muestra los tag que tengo en el proyecto
+git show-ref --tags: muestra el hash o direccion de commit donde se hizo el tag
+	1) Se copia el hashs
+	2) git tag -a v0.1 -m"texto descripcion del tag"
+	3)git push origin --tags: hace un push a los tags
+Para eliminar un tag en consola de git se hace lo siguiente 
+
+	1)git tag -d "tag que quiero eliminar(v0.1)"
+para eliminarlo en github
+	2)git push origin :refs/tags/v0.1
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
